@@ -1,0 +1,5 @@
+--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\System\include -I ..\System\Core -I ..\System\CMSIS -I ..\System\FWLib\inc -I ..\System\FreeRTOS\include -I ..\System\FreeRTOS\CMSIS_RTOS -I ..\System\FreeRTOS\portable\RVDS\ARM_CM4F -I ..\Drivers\RC -I ..\Drivers\CAN -I ..\Drivers\PWM -I ..\Drivers\USART -I ..\Drivers\GPIO -I ..\Drivers\TIM -I ..\Drivers\rng -I ..\Devices\CAN -I ..\Devices\RemoteControl -I ..\Task\Start -I ..\Task\Detect -I ..\Task\Chassis -I ..\Task\Control -I ..\Algorithm -I ..\Algorithm\PID -I ..\Algorithm\User_Lib -I ..\Algorithm\Kalman -I ..\Judgement -I ..\MPU --c99
+-ID:\MDK5\Install\Pack\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+-ID:\MDK5\Install\ARM\CMSIS\Include
+-D__UVISION_VERSION="533" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__FPU_PRESENT -DMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4
+-o .\objects\judgement_info.o --omf_browse .\objects\judgement_info.crf --depend .\objects\judgement_info.d --feedback ".\Objects\zero.fed" "..\Judgement\judgement_info.c"
